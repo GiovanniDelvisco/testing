@@ -21,7 +21,7 @@ local success=$(10004)
   
 #  check if tungsten directory exists 
   if [[ -d "/opt/continuent" ]]; then
-    role=$($trepctl_bin status|grep '^role'|awk ' {print $3}')
+    printf "Directoy:/opt/continuent/ exists"
     elif [[ ! -d "/opt/continuent" ]]; then 
   printf " Directory: /opt/continuent was not found"
   exit 1;
